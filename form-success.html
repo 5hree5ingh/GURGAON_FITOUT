@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TX4NL43');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#072a2c" />
+  <title>Thank you — AirBrick</title>
+  <link rel="icon" type="image/png" href="logo-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <style>
+    :root { --ink: #0a2426; --ink-2: #34494a; --muted: #7a8c8c; --line: rgba(10,36,38,.1); --teal: #165e60; --teal-2: #9ccbc7; --teal-soft: rgba(22,94,96,.08); --dark: #072a2c; --ease: cubic-bezier(.22,1,.36,1); }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { font-family: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif; background: #fff; color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    .ty { min-height: 100svh; display: grid; grid-template-columns: 1.05fr 1fr; }
+    .ty__media { position: relative; overflow: hidden; background: var(--dark); }
+    .ty__media > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: zoom 14s var(--ease) both; }
+    .ty__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,42,44,.35) 0%, rgba(7,42,44,.1) 40%, rgba(7,42,44,.75) 100%); }
+    .ty__home { position: absolute; z-index: 2; top: 32px; left: 40px; }
+    .ty__logo { height: 40px; width: auto; filter: brightness(0) invert(1); }
+    .ty__quote { position: absolute; z-index: 2; left: 40px; right: 40px; bottom: 40px; color: #fff; font-size: clamp(22px, 2.2vw, 32px); font-weight: 500; line-height: 1.2; letter-spacing: -.02em; max-width: 520px; }
+    .ty__quote span { color: var(--teal-2); }
+
+    .ty__body { display: flex; flex-direction: column; justify-content: center; padding: clamp(40px, 6vw, 96px) clamp(24px, 6vw, 88px); }
+    .ty__check { width: 64px; height: 64px; border-radius: 50%; background: var(--teal); color: #fff; display: grid; place-items: center; font-size: 30px; box-shadow: 0 0 0 10px var(--teal-soft); animation: pop .7s var(--ease) both .15s; }
+    .ty__pill { display: inline-flex; align-items: center; gap: 8px; margin-top: 32px; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--teal); }
+    .ty__pill::before { content: ""; width: 22px; height: 1px; background: currentColor; }
+    h1 { margin-top: 12px; font-size: clamp(34px, 4vw, 56px); line-height: 1.04; letter-spacing: -.035em; font-weight: 600; text-wrap: balance; }
+    .ty__lead { margin-top: 16px; font-size: 17px; color: var(--ink-2); max-width: 460px; }
+
+    .steps { margin-top: 36px; border-top: 1px solid var(--line); }
+    .step { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--line); opacity: 0; animation: up .8s var(--ease) both; }
+    .step:nth-child(1) { animation-delay: .35s; } .step:nth-child(2) { animation-delay: .47s; } .step:nth-child(3) { animation-delay: .59s; }
+    .step__n { width: 36px; height: 36px; border-radius: 50%; background: var(--teal-soft); color: var(--teal); display: grid; place-items: center; font-size: 18px; }
+    .step h3 { font-size: 16px; font-weight: 700; letter-spacing: -.01em; }
+    .step p { font-size: 14.5px; color: var(--muted); margin-top: 2px; }
+
+    .ty__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .btn { display: inline-flex; align-items: center; gap: 14px; height: 52px; padding: 0 8px 0 24px; border-radius: 999px; font-size: 15px; font-weight: 600; transition: background .3s, color .3s; }
+    .btn__icon { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; font-size: 17px; transition: transform .4s var(--ease); }
+    .btn:hover .btn__icon { transform: rotate(45deg); }
+    .btn--dark { background: var(--ink); color: #fff; }
+    .btn--dark .btn__icon { background: var(--teal); }
+    .btn--dark:hover { background: #12383a; }
+    .btn--line { border: 1px solid var(--line); padding-right: 24px; }
+    .btn--line:hover { background: var(--teal-soft); }
+    .ty__mail { margin-top: 22px; font-size: 14px; color: var(--muted); }
+    .ty__mail a { color: var(--teal); font-weight: 600; border-bottom: 1px solid rgba(22,94,96,.3); }
+
+    @keyframes zoom { from { transform: scale(1.08); } to { transform: scale(1); } }
+    @keyframes pop { from { transform: scale(.4); opacity: 0; } to { transform: none; opacity: 1; } }
+    @keyframes up { from { transform: translateY(16px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+    @media (max-width: 900px) {
+      .ty { grid-template-columns: 1fr; min-height: 0; }
+      .ty__media { height: 34svh; min-height: 220px; }
+      .ty__home { top: 20px; left: 20px; }
+      .ty__logo { height: 32px; }
+      .ty__quote { display: none; }
+      .ty__body { padding: 0 20px calc(32px + env(safe-area-inset-bottom)); }
+      .ty__check { margin-top: -32px; position: relative; z-index: 2; box-shadow: 0 0 0 8px #fff; }
+      .ty__pill { margin-top: 24px; }
+      h1 { font-size: clamp(30px, 8.4vw, 40px); }
+      .ty__lead { font-size: 16px; }
+      .steps { margin-top: 26px; }
+      .step { padding: 14px 0; }
+      .ty__actions { flex-direction: column; }
+      .btn { justify-content: space-between; width: 100%; }
+      .btn--line { justify-content: center; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; opacity: 1 !important; } }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TX4NL43" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <main class="ty">
+    <div class="ty__media">
+      <img src="assets/whyAB.webp" alt="Office lounge fitted out by AirBrick" />
+      <a class="ty__home" href="index.html"><img class="ty__logo" src="Airbrick_Logo.webp" alt="AirBrick Infra" /></a>
+      <p class="ty__quote">From first layout to move-in — <span>one accountable team.</span></p>
+    </div>
+
+    <section class="ty__body">
+      <div class="ty__check"><i class="ph ph-check"></i></div>
+      <span class="ty__pill">Request received</span>
+      <h1>Thank you<span id="tyName"></span>.</h1>
+      <p class="ty__lead">Your consultation request is with our Gurgaon design team. Here's what happens next.</p>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__n"><i class="ph ph-phone-call"></i></span>
+          <div><h3>A call within 24 hours</h3><p>We confirm your space type, area and budget.</p></div>
+        </li>
+        <li class="step">
+          <span class="step__n"><i class="ph ph-buildings"></i></span>
+          <div><h3>Space assessment</h3><p>We study your floor plate, measurements and brief.</p></div>
+        </li>
+        <li class="step">
+          <span class="step__n"><i class="ph ph-blueprint"></i></span>
+          <div><h3>Your AI layout &amp; mood board</h3><p>A personalised floor plan and design direction to approve.</p></div>
+        </li>
+      </ol>
+
+      <div class="ty__actions">
+        <a href="tel:+918851228822" class="btn btn--dark"><span>Call us now</span><span class="btn__icon"><i class="ph ph-phone"></i></span></a>
+        <a href="index.html" class="btn btn--line"><span>Back to the website</span></a>
+      </div>
+      <p class="ty__mail">Prefer email? <a href="mailto:business@airbrickinfra.com">business@airbrickinfra.com</a></p>
+    </section>
+  </main>
+
+  <script>
+    try {
+      var n = sessionStorage.getItem('abLeadName');
+      if (n) document.getElementById('tyName').textContent = ', ' + n;
+    } catch (e) {}
+  </script>
+</body>
+</html>
